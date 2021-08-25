@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 :root {
-    /* Primary */
-    --Red: hsl(0, 78%, 62%)
-    --Cyan: hsl(180, 62%, 55%)
-    --Orange: hsl(34, 97%, 64%)
-    --Blue: hsl(212, 86%, 64%)
-    
-    /* Neutral */
-    --VeryDarkBlue: hsl(234, 12%, 34%)
-    --GrayishBlue: hsl(229, 6%, 66%)
-    --VeryLightGray: hsl(0, 0%, 98%)
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
 }
 
 * {
@@ -19,4 +19,67 @@
 
 body {
   font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin: 80px 30px;
+  background-color: var(--VeryLightGray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  margin-bottom: 20px;
+  width: 315px;
+}
+main header h1 {
+  color: var(--VeryDarkBlue);
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+main header h1 span {
+  font-weight: 200;
+}
+main header p {
+  text-align: center;
+  color: var(--GrayishBlue);
+  margin-bottom: 80px;
+  line-height: 1.7;
+}
+main .features {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .features .feature {
+  background-color: white;
+  height: 173px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 3px hsla(212, 34%, 47%, 0.151);
+  padding: 25px;
+}
+main .features .feature h3 {
+  color: var(--VeryDarkBlue);
+  margin-bottom: 8px;
+}
+main .features .feature p {
+  color: var(--GrayishBlue);
+  font-size: 13.5px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+main .features .feature img {
+  display: block;
+  margin-left: 200px;
+}
+main .features .one {
+  border-top: 3px solid var(--Cyan);
+}
+main .features .two {
+  border-top: 3px solid var(--Red);
+}
+main .features .three {
+  border-top: 3px solid var(--Orange);
+}
+main .features .four {
+  border-top: 3px solid var(--Blue);
 }
